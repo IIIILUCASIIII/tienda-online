@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { CartProvider } from './context/CartContext';
-import { Navbar } from './components/Navbar';
-import { Home } from './views/Home';
-import { Cart } from './views/Cart';
+import { CartProvider } from './context/CartContext.jsx';
+import { Navbar } from './components/Navbar.jsx';
+import { Home } from './views/Home.jsx';
+import { Cart } from './views/Cart.jsx';
 
 function App() {
     const [view, setView] = useState('home');
