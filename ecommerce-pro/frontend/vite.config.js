@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Configuración corporativa blindada para GitHub Codespaces
 export default defineConfig({
+  // Reemplaza 'tienda-online' por el nombre exacto de tu repositorio en GitHub
+  base: '/tienda-online/', 
   plugins: [react()],
   server: {
-    host: '0.0.0.0', // Permite que Codespaces transmita el contenido
+    host: '0.0.0.0',
     port: 5173,
     strictPort: true
   }
